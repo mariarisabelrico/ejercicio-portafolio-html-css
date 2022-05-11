@@ -1,0 +1,196 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* selectores por etiqueta*/
+body{  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+  background-color: #e8e4e6;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight:700;
+}
+
+
+footer{
+  background-color: #e8e4e6;
+  height: 5rem;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* selectores por relacion con nav*/
+ 
+nav a{
+  color: #001e1d;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+/*pseudoclase para botones de nav*/
+
+nav a:hover{
+  background-color: #f9bc60;
+
+}
+
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* selectores de clase */
+
+.myName{
+    color:#f9bc60;
+
+}
+
+.profile-img {
+    width:200px;
+    border-radius: 50%;
+    border:solir 15px #232946;
+
+}
+/* creo clase en section para englobar todas*/
+
+.section-container {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* selectores por id */
+
+#section1{
+    background-color: #004643;
+    color:#fffffe;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section2{
+    background-color: #abd1c6;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer-link-container {  
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* estilos tabla*/
+
+table {
+  border: solid 2px #004643;
+  text-align: center;
+  font-size: 1.5rem;
+  table-layout: fixed;
+
+}
+
+table,th,td {
+  border: solid 2px #181818;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f9bc60;
+  color: #004643;
+  font-size: 1.7rem;
+}
+
+thead th: :nth-child(1){
+  width: 25rem;
+  padding: 1rem;
+
+}
+
+thead th: :nth-child(2){
+  width: 30rem;
+  padding: 1rem;
+
+tbody {
+  background-color: white;
+}
+
+}
+
+tr td {
+  padding: 0.5rem;
+}
+
+/* uso de el bem*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px 20px;
+  background-color: #f9bc60;
+}
+
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;  
+  margin: 20px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.gallery__item--item1 {
+  background-image: url(../imagenes/proyectos.jpg);
+}
+
+.gallery__item--item2 {
+  background-image: url(../imagenes/portafolio.jpg);
+}
+
+.gallery__item--item3 {
+  background-image: url(../imagenes/voluntariado.jpg);
+}
+
+.gallery__title {
+padding: 10px;
+border-radius: 10px;
+margin: 10px;
+background-color: rgba(170, 164, 164, 0.5);
+color: white;
+text-transform: uppercase;
+font-weight: 700;
+cursor: pointer;
+
+}
